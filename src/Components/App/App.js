@@ -28,12 +28,12 @@ class App extends Component {
     checkbox.forEach(box => { 
       if(box.value === event.currentTarget.value) { 
 
-        // Une fois la box trouver je modifie sa valeur de isChecked avec un toggle 
+        // Une fois la box trouvée je modifie sa valeur de isChecked avec un toggle 
         box.isChecked = !box.isChecked
       }
     }) 
 
-    // Ma variable checkbox étant modifier avec la bonne valeur par le forEach 
+    // Ma variable checkbox étant modifiée avec la bonne valeur par le forEach 
     // Je modifie donc mon state avec la nouvelle valeur via une destructuration 
     this.setState({checkbox: checkbox}) 
     
